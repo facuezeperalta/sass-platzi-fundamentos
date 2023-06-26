@@ -1,16 +1,34 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 nav {
-  width: 100%;
-  height: 135px;
+  width: auto;
+  padding: 0.5rem;
   border-bottom: 1px solid #FFDAC6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7C6A0A;
 }
-
-main {
-  background-color: #FFEFE7;
+nav p {
+  font-size: 2rem;
+  padding-left: 1.875rem;
+}
+nav .nav-icons {
+  display: flex;
+  gap: 15px;
+}
+nav .nav-icons button {
+  background: none;
+  border-style: none;
 }
 
 footer {
