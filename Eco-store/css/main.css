@@ -10,11 +10,12 @@ html {
 }
 
 nav {
-  width: auto;
-  padding: 0.5rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: auto;
+  padding: 0.5rem;
   color: #7C6A0A;
 }
 nav p {
@@ -58,6 +59,10 @@ article button {
   color: #FFEFE7;
   font-size: 1.4rem;
 }
+article button:hover {
+  cursor: pointer;
+  background-color: #cf7c00;
+}
 article img {
   width: 25vw;
   border-radius: 15px;
@@ -73,14 +78,14 @@ section h2 {
   font-size: 2.5rem;
   font-weight: lighter;
 }
-section .healthcare {
+section .healthcare, section .furniture {
   padding-bottom: 60px;
 }
-section .healthcare h2 {
+section .healthcare h2, section .furniture h2 {
   font-weight: 300;
   padding-bottom: 60px;
 }
-section .healthcare .card-section {
+section .healthcare .card-section, section .furniture .card-section {
   display: flex;
   width: auto;
   height: auto;
@@ -91,7 +96,7 @@ section .healthcare .card-section {
        column-gap: 50px;
   row-gap: 50px;
 }
-section .healthcare .card-section .product-card {
+section .healthcare .product-card, section .furniture .product-card {
   width: 14vw;
   height: 45vh;
   background-color: #FFDAC6;
@@ -99,33 +104,37 @@ section .healthcare .card-section .product-card {
   padding: 20px;
   border-radius: 10px;
 }
-section .healthcare .card-section .product-card .icon {
+section .healthcare .product-card .icon, section .furniture .product-card .icon {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 16px;
 }
-section .healthcare .card-section .product-card .icon svg {
+section .healthcare .product-card .icon svg, section .furniture .product-card .icon svg {
   width: 24px;
   height: 24px;
 }
-section .healthcare .card-section .product-card .icon svg:hover {
+section .healthcare .product-card .icon svg:hover, section .furniture .product-card .icon svg:hover {
   cursor: pointer;
 }
-section .healthcare .card-section .product-card .product-image {
+section .healthcare .product-card .product-image, section .furniture .product-card .product-image {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .healthcare .card-section .product-card .product-image img {
-  height: 12vw;
-  width: 30vh;
+section .healthcare .product-card .product-image img, section .furniture .product-card .product-image img {
+  height: 30vh;
+  width: 12vw;
   border-radius: 6px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+section .furniture .product-card {
+  background-color: #babd8d;
+  color: #F2F2F2;
 }
 
 footer {
