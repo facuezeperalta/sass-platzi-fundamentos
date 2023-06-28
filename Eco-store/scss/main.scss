@@ -105,12 +105,11 @@ section{
             padding-bottom: 60px;
         }
         .card-section{
-            display: flex;
+            @include flexCenter(row,space-evenly ,center );
+            
             width: auto;
             height: auto;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
             column-gap: 50px;
             row-gap: 50px;
         }
@@ -125,7 +124,7 @@ section{
                 width: 100%;
                 height: auto;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: flex-end; 
                 padding-bottom: 16px;
                 svg{
                     width: 24px;

@@ -87,11 +87,12 @@ section .healthcare h2, section .furniture h2 {
 }
 section .healthcare .card-section, section .furniture .card-section {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   width: auto;
   height: auto;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   -moz-column-gap: 50px;
        column-gap: 50px;
   row-gap: 50px;
